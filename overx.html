@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<script src="bostonEmployeeSalaries.json"></script>
+
+<p>Number of jobs with salaries over:</p>
+<input id='salary' type='text' value = "1000">
+<button onclick="count()">Search</button><br>
+<div id="output"><</div>
+
+<script>
+
+var salaries = data.data;
+var salary = 0;
+
+var count = function(){
+    salary = Number(document.getElementById('salary').value);
+    var filtered = salaries.filter(
+        function(item) {
+         return number(item[18])>salary;
+        })
+    console.log(filtered.length);
+};
+
+</script>
+
+</html>
